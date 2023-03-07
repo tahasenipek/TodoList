@@ -18,22 +18,29 @@
                 <form action="{{route('store')}}" method= "POST"  autocomplete="off">
                     @csrf
                     <div class="input-group">
-                        <input type="text" name="content" class="form-conrol" placeholder="Add your new todo">
+                        <input type="text" name="content" class="form-conrol" placeholder="Add your new todo ">
                         <button type="submit" class="btn btn-dark btn-sm px-4"><i class="fas fa-plus"></i></button>
                     </div>
                 </form>
                 {{-- if tasks count --}}
                 @if (count($todolist))
-                <ul class="list-group list-group-flush mt-3">
+                <ul class="list-group list-group-flush mt-3"> 
                     @foreach ($todolist as $todolist)
-                        <li class="list-group-item">
-                            <form action="{{route('destroy', $todolist->id)}}" method="POST">
+                    <li class="list-group-item">
+                        <form action="{{route('destroy', $todolist->id)}}" method="POST">
                             {{$todolist ->content}}
                             @csrf
                             @method('delete')
-                            <button type="submit" class="btn btn-link btn-sm float-end"><i class="fas fa-trash"></i></button> 
-                            </form>
-                        </li>   
+                            <button type="submit" class="btn btn-link btn-sm float-end"><i class="fas fa-trash"></i></button>
+                        </form>
+                        <form action="/" method="POST">
+                            @csrf
+                            @method('PUT')
+                            <input type="hidden" name="id" value="{{ $todolist->id }}"  placeholder="Edit">
+                            <input type="text" name="content"  placeholder="Edit" style="float: right;">
+                            <button class="btn btn-primary btn-sm" > <i class="fas fa-user-edit"></i>  </button>
+                          </form>
+                        </li>
                         @endforeach
                 </ul>
                 @else

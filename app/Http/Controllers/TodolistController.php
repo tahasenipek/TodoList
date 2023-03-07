@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Todolist;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class TodolistController extends Controller
 {
@@ -16,7 +17,15 @@ class TodolistController extends Controller
         return view('home', compact('todolist'));
     }
 
-    /**
+    public function update(Request $request)
+    {
+        $todolist = TodoList::find($request->id);
+        $todolist->content = $request->content;
+        $todolist->save();
+
+        return back();
+    }
+    /*
      * Store a newly created resource in storage.
      */
     public function store(Request $request)

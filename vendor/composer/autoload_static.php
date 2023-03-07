@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
+class ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -2066,6 +2066,7 @@ class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
         'Illuminate\\Foundation\\Concerns\\ResolvesDumpSource' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Concerns/ResolvesDumpSource.php',
         'Illuminate\\Foundation\\Console\\AboutCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/AboutCommand.php',
         'Illuminate\\Foundation\\Console\\CastMakeCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/CastMakeCommand.php',
+        'Illuminate\\Foundation\\Console\\ChannelListCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ChannelListCommand.php',
         'Illuminate\\Foundation\\Console\\ChannelMakeCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ChannelMakeCommand.php',
         'Illuminate\\Foundation\\Console\\ClearCompiledCommand' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/ClearCompiledCommand.php',
         'Illuminate\\Foundation\\Console\\CliDumper' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/Console/CliDumper.php',
@@ -2342,6 +2343,8 @@ class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
         'Illuminate\\Queue\\DatabaseQueue' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/DatabaseQueue.php',
         'Illuminate\\Queue\\Events\\JobExceptionOccurred' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobExceptionOccurred.php',
         'Illuminate\\Queue\\Events\\JobFailed' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobFailed.php',
+        'Illuminate\\Queue\\Events\\JobPopped' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobPopped.php',
+        'Illuminate\\Queue\\Events\\JobPopping' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobPopping.php',
         'Illuminate\\Queue\\Events\\JobProcessed' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobProcessed.php',
         'Illuminate\\Queue\\Events\\JobProcessing' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobProcessing.php',
         'Illuminate\\Queue\\Events\\JobQueued' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Queue/Events/JobQueued.php',
@@ -3369,6 +3372,7 @@ class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
         'NunoMaduro\\Collision\\Exceptions\\InvalidStyleException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/InvalidStyleException.php',
         'NunoMaduro\\Collision\\Exceptions\\ShouldNotHappen' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/ShouldNotHappen.php',
         'NunoMaduro\\Collision\\Exceptions\\TestException' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/TestException.php',
+        'NunoMaduro\\Collision\\Exceptions\\TestOutcome' => __DIR__ . '/..' . '/nunomaduro/collision/src/Exceptions/TestOutcome.php',
         'NunoMaduro\\Collision\\Handler' => __DIR__ . '/..' . '/nunomaduro/collision/src/Handler.php',
         'NunoMaduro\\Collision\\Highlighter' => __DIR__ . '/..' . '/nunomaduro/collision/src/Highlighter.php',
         'NunoMaduro\\Collision\\Provider' => __DIR__ . '/..' . '/nunomaduro/collision/src/Provider.php',
@@ -6217,6 +6221,9 @@ class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
         'Whoops\\Handler\\PlainTextHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PlainTextHandler.php',
         'Whoops\\Handler\\PrettyPageHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/PrettyPageHandler.php',
         'Whoops\\Handler\\XmlResponseHandler' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Handler/XmlResponseHandler.php',
+        'Whoops\\Inspector\\InspectorFactory' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactory.php',
+        'Whoops\\Inspector\\InspectorFactoryInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorFactoryInterface.php',
+        'Whoops\\Inspector\\InspectorInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Inspector/InspectorInterface.php',
         'Whoops\\Run' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Run.php',
         'Whoops\\RunInterface' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/RunInterface.php',
         'Whoops\\Util\\HtmlDumperOutput' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/HtmlDumperOutput.php',
@@ -6229,10 +6236,10 @@ class ComposerStaticInit1a057af88797cbdb32a531ef12c934b7
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit1a057af88797cbdb32a531ef12c934b7::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit1a057af88797cbdb32a531ef12c934b7::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit1a057af88797cbdb32a531ef12c934b7::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit1a057af88797cbdb32a531ef12c934b7::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit22a205b6c4560c56f6e06a7c896eca6d::$classMap;
 
         }, null, ClassLoader::class);
     }
